@@ -1,7 +1,9 @@
 <div class="off-canvas-wrapper">
 
-	<!-- Mobile Off-Canvas -->
+	<!-- Off-Canvas -->
     <div class="off-canvas position-right" id="offCanvas" data-off-canvas>
+		
+		<img src="{{ theme:img src="logo-back.svg" }}" alt="logo" class="back-logo" width="80">
     	
     	<div class="close">
       		<button class="close-button" aria-label="Close menu" type="button" data-close>
@@ -9,15 +11,12 @@
       		</button>
       	</div>
       
-      	<ul class="vertical menu">
-      		{{ nav from="/" scope="tag" include_home="true" }}
+      	<ul id="main-nav" class="vertical menu">
+      		{{ nav from="/" scope="tag" exclude="whats-a-pod|corporate-accounts|privacy-policy|terms-of-use|careers" }}
       		<li{{ if is_current or is_parent }} class="active"{{ /if }}>
-      			<a href="{{ url }}">{{ tag:nav_title or title }}</a>
+      			<a href="{{ url }}" class="menu-item-{{ increment }}">{{ tag:nav_title or title }}</a>
       		</li>
       		{{ /nav }}
-      		<li{{ if is_current or is_parent }} class="active"{{ /if }}>
-      				<a href="#" class="snipcart-checkout">My Cart</a>
-      		</li>
       	</ul>
       	
 	</div>
@@ -26,53 +25,25 @@
     <div class="off-canvas-content" data-off-canvas-content>
 
 		<div data-sticky-container>
-		
 			<div data-sticky data-options="marginTop:0;">
 
 				<div class="top-bar">
-			
     				<div class="top-bar-left show-for-large" id="example-menu">
     					
       					<ul class="vertical medium-horizontal dropdown menu show-for-large" data-responsive-menu="accordion medium-dropdown">
       						<li>
-      							<a href="/"><img src="https://placehold.it/160x50" alt="logo"></a>
+      							<a href="/" style="border: none;"><img src="{{ theme:img src="np-logo-horiz-rgb.svg" }}" alt="logo" width="230"></a>
       						</li>
-        
-        					{{ nav from="/" scope="tag" exclude="products" }}
-        						
-        						{{ if children }}
-        						<li{{ if is_current or is_parent }} class="active"{{ /if }}>
-        							<a data-open="child-modal-{{ count }}" >{{ tag:nav_title or title }}</a>
-        						</li>
-        						<div class="reveal full" id="child-modal-{{ count }}" data-reveal data-animation-in="slide-in-down" data-animation-out="fade-out fast">
-        						    <ul>
-        						    	<li{{ if is_current or is_parent }} class="active"{{ /if }}>
-        						    		<a href="{{ url }}">Overview</a>
-        						    	</li>
-        						    	{{ *recursive children* }}
-        						    </ul>
-        						    <button class="close-button" data-close aria-label="Close modal" type="button">
-        						    	   <span aria-hidden="true">&times;</span>
-        						    </button>
-        						    <hr>
-        						    <h4 class="text-center">Some text about this section of the site.</h4>
-        						</div>
-        						{{ else }}
-        						<li{{ if is_current or is_parent }} class="active"{{ /if }}>
-        							<a href="{{ url }}">{{ tag:nav_title or title }}</a>
-        						</li>
-        						{{ /if }}
-        						
-        						
-        					    
-        					{{ /nav }}
       					</ul>
+	  					
     				</div>
     
     				<div class="top-bar-right show-for-large">
     					<ul class="menu">
-    						<li {{ if segment_1 == 'products' }}class="active"{{ /if }}><a href="/products" class="button small radius">Products</a></li>
-    						<li><a href="#" class="snipcart-checkout button hollow basket"><i class="fas fa-shopping-bag" style="color:white"></i></a></li>  
+							<li><a href="/whats-a-pod" style="border: none;">What's a Pod?</a></li>
+    						<li {{ if segment_1 == 'products' }}class="active"{{ /if }}><a href="/make-a-reservation" class="button small hollow round">Make a Reservation</a></li>
+							<li><a data-toggle="offCanvas" class="float-right" style="border: none;"><i class="fas fa-bars fa-2x" style="color: white;"></i></a></li>
+
     					</ul>
     					
     				</div>
@@ -80,16 +51,12 @@
     				<!-- Mobile Top Nav -->
     
     				<div class="small-6 columns hide-for-large">
-    					<a href="/" class="hide-for-large logo"><img src="https://placehold.it/160x50" alt="logo"></a>
-    				</div>
-    				<div class="small-6 columns hide-for-large">
-    					<a data-toggle="offCanvas" class="float-right"><i class="fas fa-bars fa-2x" style="color: white;"></i></a>
+    					<a href="/" class="hide-for-large logo"><a href="/"><img src="{{ theme:img src="np-logo-horiz-rgb.svg" }}" alt="logo" width="160"></a></a>
     				</div>
 
-    			
     			</div><!--/top-bar-->
     		
-  			</div><!--/sticky-container-->
-  		
-		</div><!--/off-canvas-content-->
+  			</div><!--/data-sticky-->
+  			
+		</div><!--/sticky-container-->
 

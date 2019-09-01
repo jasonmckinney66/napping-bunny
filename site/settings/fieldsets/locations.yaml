@@ -1,0 +1,8 @@
+sections:
+  content:
+    display: Content
+    fields: {  }
+taxonomies: false
+hide: true
+title: Locations
+create_title: Locations

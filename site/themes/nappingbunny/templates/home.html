@@ -1,20 +1,114 @@
-<section class="regular">
+<div class="hero-full-screen">
+	{{if "phone" == { mobile_detect } }}
+		<img src="{{ theme:asset src="img/placeholder.jpg" }}" class="img-fill">
+	{{ else }}
+	<video playsinline autoplay muted loop poster="{{ theme:asset src="img/placeholder.jpg" }}" id="bgvid">
+	    <!--<source src="../placeholder.webm" type="video/webm">-->
+	    <source src="{{ theme:asset src="img/placeholder.mp4" }}" type="video/mp4">
+	</video>
+	{{ endif }}
+	
+  <div class="top-content-section"></div>
 
-    <h1 class="special centered">
-        <small>The Statamic</small>
-        Redwood Theme
-    </h1>
+  <div class="middle-content-section">
+    <h1>This is Header Content</h1>
+    <button class="button large radius primary">A Button</button> &nbsp;&nbsp; <button class="button large radius hollow">Another Button</button>
+  </div>
 
-    <div class="centered">{{ content }}</div>
+	<div class="bottom-content-section" data-magellan data-threshold="-150" data-offset="130">
+		<a href="#content-section"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm-18.005-1.568l1.415-1.414 4.59 4.574 4.579-4.574 1.416 1.414-5.995 5.988-6.005-5.988z"/></svg></a>
+	</div>
 
-	<article class="list">
-		{{ collection:blog :limit="posts" scope="tag" }}
-			{{ partial:block }}
-		{{ /collection:blog }}
-	</article>
+</div>
 
-    <div class="read-more">
-        <a href="{{ link to='blog' }}">Read the rest of the blog</a>
-    </div>
+<div id="content-section" data-magellan-target="content-section">
 
-</section>
+	<section class="callout panel">
+		<div class="row align-center">
+			<div class="small-12 medium-4 columns">
+				<div class="stat text-center">128</div>
+				<p class="text-center">Days without a<br>merge conflict</small>
+			</div>
+			<div class="small-12 medium-4 columns">
+				<div class="stat text-center">128</div>
+				<p class="text-center">Days without a<br>merge conflict</small>
+			</div>
+			<div class="small-12 medium-4 columns">
+				<div class="stat text-center">128</div>
+				<p class="text-center">Days without a<br>merge conflict</p>
+			</div>
+		</div>
+	</section>
+	
+	<section class="home">
+		<div class="row align-center">
+			<div class="small-12 medium-10 columns">
+				<p class="lead">{{ content }}</p>
+			</div>
+		</div>
+	</section>
+	
+	<section class="callout panel">
+		<div class="row">
+			<div class="small-12 medium-6 columns">
+			
+				<h2>Featured Products</h2>
+				<p>Cupcake ipsum dolor sit amet. Jelly beans liquorice donut brownie candy carrot cake muffin jelly muffin. Sweet roll gingerbread sugar plum topping gingerbread cotton candy donut donut gummies.</p>
+				
+				<div class="row">
+					<div class="small-6 columns">
+						<a href="/products/" class="button medium hollow">All Products</a>
+					</div>
+					<div class="small-6 columns">
+						<div class="orbit-controls float-right">
+							<a class="prev-slide orbit-external-control"><i class="fas fa-chevron-left fa-2x"></i></a> &nbsp;&nbsp;&nbsp; <a class="next-slide orbit-external-control"><i class="fas fa-chevron-right fa-2x"></i></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="small-12 columns">
+						<div class="callout primary home">
+							<h4>Launch Sale</h4>
+							<p class="lead">For a limited time, get 20% off your purchase. Enter <code>GETHAPPY</code> at checkout.</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="small-12 medium-6 columns">
+		
+				<div class="orbit" role="region" aria-label="Products" data-orbit data-auto-play=false>
+		 			<div class="orbit-wrapper">
+		 				<ul class="orbit-container">
+		 					{{ if featured_products_1 }}
+							<li class="orbit-slide">
+		            			<ul class="row small-up-1 medium-up-2">
+		            				{{ relate:featured_products_1 }}
+		                				<li class="column product-slide">{{ partial:product-card }}</li>
+		                			{{ /relate:featured_products_1 }}
+		                 		</ul>
+		            		</li>
+		            		{{ endif }}
+		            		{{ if featured_products_2 }}
+		            		<li class="orbit-slide">
+		            			<ul class="row small-up-1 medium-up-2">
+		            				{{ relate:featured_products_2 }}
+		            					<li class="column product-slide">{{ partial:product-card }}</li>
+		            				{{ /relate:featured_products_2 }}
+		            			</ul>
+		            		</li>
+		            		{{ endif }}
+		   				</ul>
+					</div>
+
+		    		<nav class="orbit-bullets">
+		    			<button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+		    			<button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+		   			</nav>
+		   			
+				</div><!-- /orbit -->
+			</div>
+		</div>
+	</section>
+</div>
