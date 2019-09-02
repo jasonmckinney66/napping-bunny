@@ -4,5 +4,5 @@ locales:
   en:
     full: en_US
     name: English
-    url: 'http://dev.nappingbunny.com/'
+    url: '{env:APP_URL}'
 timezone: UTC

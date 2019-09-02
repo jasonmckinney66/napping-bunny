@@ -263,33 +263,15 @@ div#child-modal-1 {
 
 /* Home Layout */
 
-.hero .middle-content-section {
-  text-align: center;
-  color: #fefefe;
+.callout.secondary {
+	background-color: #52485a;
+	color: #fff;
+	margin-top: -2em;
+	z-index: 1;
+	border: 1px solid #eee;
+	text-transform: lowercase;
 }
 
-.hero .top-content-section {
-  width: 100%;
-}
-
-.hero .bottom-content-section {
-  padding: 1rem;
-}
-
-.hero .bottom-content-section svg {
-  height: 3.75rem;
-  width: 3.75rem;
-  fill: #fefefe;
-}
-
-.callout.home {
-	margin-top: 1rem;
-	margin-bottom: 0;
-}
-
-.sale {
-	color: green;
-}
 
 /* Ribbon Sale and New */
 .img-holder .ribbon-wrapper-green {

@@ -1,1 +1,1 @@
-debug: true
+debug: '{env:APP_DEBUG}'
