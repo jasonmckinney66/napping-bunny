@@ -1,0 +1,3 @@
+driver: sendmail
+from_email: admin@example.com
+from_name: 'Website Administrator'

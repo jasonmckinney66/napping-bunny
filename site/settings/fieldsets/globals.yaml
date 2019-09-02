@@ -1,8 +1,16 @@
-title: Default Globals
+title: 'Default Globals'
 hide: true
-fields:
-  site_name:
-    type: text
-    display: Website Name
-    instructions: The name of your website
-    localizable: true
+sections:
+  main:
+    display: Main
+    fields:
+      site_name:
+        type: text
+        display: 'Website Name'
+        instructions: 'The name of your website'
+        localizable: true
+      open_for_business:
+        type: toggle
+        instructions: 'Display all scheduling and account features?'
+        display: 'Open for Business'
+taxonomies: true
