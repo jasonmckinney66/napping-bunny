@@ -204,7 +204,7 @@ div#child-modal-1 {
 /* Headers */
 .hero {
 	background-size: cover;
-	background-position: 50% 30%;
+	background-position: 50% 50%;
 	position: relative;
 	min-height: 430px;
 	margin-bottom: 4em;
@@ -218,8 +218,7 @@ div#child-modal-1 {
     top: 0;
     bottom: 0;
     z-index: 1;
-    background: linear-gradient(to bottom, rgba(1, 36, 47, 0.81) 0%, rgba(186, 184, 0, 0.15) 80%);
-    opacity: .7;
+    background: linear-gradient(to bottom, #001b3ac2 0%, #003e5400 80%);
 }
 
 .hero h1 {
@@ -227,39 +226,57 @@ div#child-modal-1 {
 	padding-top: 4em;
 }
 
-/* Home Layout */
-.hero-full-screen {
-  height: 100vh;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  /*background: url("https://images.pexels.com/photos/378273/pexels-photo-378273.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat;
-  background-size: cover;*/
+.bottom-mask {
+	border-radius: 0 0 200% 200%;
+	left: -50%;
+	margin: 0 auto;
+	overflow: hidden;
+	position:relative;
+	width: 200%;
+	z-index: 1;
+}
+.bottom-radius {
+	border-radius: 0 0 200% 200%;
+	overflow: hidden;
+	width: 100%;
+	height:300px;
+	z-index: 1;
+}
+.bottom-radius img {
+	min-width:100%;
+	min-height: 300px;
+	width:auto;
 }
 
-.hero-full-screen .middle-content-section {
+.bottom-radius-home {
+	border-radius: 0 0 200% 200%;
+	overflow: hidden;
+	width: 100%;
+	height:450px
+}
+.bottom-radius-home video {
+	margin: 0 auto;
+	display: block;
+	width: 50%;
+}
+
+
+/* Home Layout */
+
+.hero .middle-content-section {
   text-align: center;
   color: #fefefe;
 }
 
-.hero-full-screen .top-content-section {
+.hero .top-content-section {
   width: 100%;
 }
 
-.hero-full-screen .bottom-content-section {
+.hero .bottom-content-section {
   padding: 1rem;
 }
 
-.hero-full-screen .bottom-content-section svg {
+.hero .bottom-content-section svg {
   height: 3.75rem;
   width: 3.75rem;
   fill: #fefefe;
@@ -363,13 +380,18 @@ footer hr {
 footer span.date {
 	color: #bababa;
 }
+
+.copyright {
+	color: #8a8a8a;
+	padding: .9rem 1.6rem;
+}
 .color-strip {
-	background-color: #666;
-	padding: .5em 0;
+	background-color: #7fbb42;
+	padding: .4em 0;
 }
 .middle {
 	padding: 2em 0;
-	background-color: #7b7b7b;
+	background-color: #53495a;
 }
 .social {
 	padding-left: 1em;

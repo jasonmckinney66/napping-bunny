@@ -1,8 +1,36 @@
+taxonomies: false
+title: Home
 hide: true
-fields:
-  posts:
-    type: integer
-    display: Number of Posts
-    width: 25
-  content:
-    type: markdown
+sections:
+  main:
+    display: Main
+    fields:
+      hero:
+        type: section
+        display: Hero
+      video_link:
+        type: text
+        instructions: 'Direct link to the Vimeo video.'
+        width: 50
+        display: 'Video Link'
+      hero_static:
+        container: main
+        folder: img
+        restrict: true
+        max_files: 1
+        mode: grid
+        type: assets
+        width: 50
+        display: 'Hero Static'
+      main_headline:
+        type: text
+        display: 'Main Headline'
+      featured_location:
+        max_items: '1'
+        sort: 'title:asc'
+        label: '{{ title }}'
+        collection:
+          - locations
+        mode: panes
+        type: collection
+        display: 'Featured Location'
