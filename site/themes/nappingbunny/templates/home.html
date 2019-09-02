@@ -1,60 +1,85 @@
 <div class="bottom-mask">
 	<div class="bottom-radius-home">
 
-<div class="hero">
-	{{if "phone" == { mobile_detect } }}
-		<img src="{{ theme:asset src="img/placeholder.jpg" }}" class="img-fill">
-	{{ else }}
-	<video playsinline autoplay muted poster="{{ hero_static }}">
-	    <source src="{{ video_link }}" type="video/mp4">
-	</video>
-	{{ endif }}
-	
-  <div class="top-content-section"></div>
-</div>
+		<div class="hero">
+			{{if "phone" == { mobile_detect } }}
+				<img src="{{ theme:asset src="img/placeholder.jpg" }}" class="img-fill">
+			{{ else }}
+			<video playsinline autoplay muted poster="{{ hero_static }}">
+			    <source src="{{ video_link }}" type="video/mp4">
+			</video>
+			{{ endif }}
+			<div class="top-content-section"></div>
+		</div>
 	</div>
 </div>
 
-<div id="content-section" data-magellan-target="content-section">
+<div class="row align-center">
+	<div class="callout secondary">
+		<div class="small-12 medium-2 columns">
+			<h5 style="display: inline;">Reserve Your Pod</h5>
+		</div>
+		<form>
+			<div class="small-12 medium-2 columns">
+			  <select required>
+				<option value="location" selected>Location</option>
+			    <option value="denver">Denver</option>
+			    <option value="seattle">Seattle</option>
+			  </select>
+			</div>
+			<div class="small-12 medium-2 columns">
+				<input type="date" id="start" name="day" value="2018-07-22" min="2018-01-01" max="2018-12-31" required>
+			</div>
+			<div class="small-12 medium-2 columns">
+				<input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+			</div>
+			<div class="small-12 medium-1 columns">
+				<input type="number" id="tentacles" name="tentacles" min="1" max="8" required>
+			</div>
+			<div class="small-12 medium-2 columns">
+				<input class="button small expanded" type="submit" value="Check Availability">
+			</div>
+		</form>
+	</div>
+</div>
 
 	
-	<section class="home">
-		<div class="row align-center">
-			<div class="small-12 columns">
-				<h1 class="text-center">{{ main_headline }}</h1>
-			</div>
+<section>
+	<div class="row align-center">
+		<div class="small-12 columns">
+			<h1 class="text-center">{{ main_headline }}</h1>
 		</div>
-	</section>
-	
-	<section>
-		<div class="row align-center">
-			<div class="small-12 columns">
-				<h2>Featured Location</h2>
-			</div>
+	</div>
+</section>
+
+<section>
+	<div class="row align-center">
+		<div class="small-12 columns">
+			<h2>Featured Location</h2>
 		</div>
-	</section>
-	
-	<section>
-		<div class="row align-center">
-			<div class="small-12 columns">
-				<h2>Promos go here.</h2>
-			</div>
+	</div>
+</section>
+
+<section>
+	<div class="row align-center">
+		<div class="small-12 columns">
+			<h2>Promos go here.</h2>
 		</div>
-	</section>
-	
-	<section>
-		<div class="row align-center">
-			<div class="small-12 columns">
-				<h2>Quote</h2>
-			</div>
+	</div>
+</section>
+
+<section>
+	<div class="row align-center">
+		<div class="small-12 columns">
+			<h2>Quote</h2>
 		</div>
-	</section
-	
-	<section class="callout panel">
-		<div class="row">
-			<div class="small-12 columns">
-				<h2>Bunny News</h2>
-			</div>
+	</div>
+</section>
+
+<section class="callout panel">
+	<div class="row">
+		<div class="small-12 columns">
+			<h2>Bunny News</h2>
 		</div>
-	</section>
-</div>
+	</div>
+</section>
