@@ -4,5 +4,5 @@ locales:
   en:
     full: en_US
     name: English
-    url: 'http://napping-bunny.test/'
+    url: 'http://dev.nappingbunny.com/'
 timezone: UTC
