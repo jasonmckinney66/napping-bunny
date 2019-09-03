@@ -2,7 +2,7 @@ taxonomies: false
 title: Default
 sections:
   main:
-    display: Main
+    display: 'Page Content'
     fields:
       body:
         type: replicator
@@ -75,6 +75,9 @@ sections:
               table:
                 type: table
                 display: Table
+  seo:
+    display: SEO
+    fields: {  }
   sidebar:
     display: Sidebar
     fields:

@@ -41,7 +41,9 @@
     				<div class="top-bar-right show-for-large">
     					<ul class="menu">
 							<li><a href="/whats-a-pod" style="border: none;">What's a Pod?</a></li>
-    						<li {{ if segment_1 == 'products' }}class="active"{{ /if }}><a href="/make-a-reservation" class="button small hollow round">Make a Reservation</a></li>
+							{{ if open_for_business }}
+    							<li {{ if segment_1 == 'products' }}class="active"{{ /if }}><a href="/make-a-reservation" class="button small hollow round">Make a Reservation</a></li>
+							{{ endif }}
 							<li><a data-toggle="offCanvas" class="float-right" style="border: none;"><i class="fas fa-bars fa-2x" style="color: white;"></i></a></li>
 
     					</ul>

@@ -14,34 +14,43 @@
 	</div>
 </div>
 
-<div class="row align-center">
-	<div class="callout secondary">
-		<div class="small-12 medium-2 columns">
-			<h5 style="display: inline;">Reserve Your Pod</h5>
+{{ if open_for_business }}
+	<div id="schedule" class="row">
+		<div class="small-12 medium-10 medium-offset-1 columns">
+			
+			<div class="callout secondary">
+				<div class="row">
+					<div class="small-12 medium-2 columns">
+						<h5 class="small-centered">Reserve a Pod</h5>
+					</div>
+					<form>
+						<div class="small-12 medium-2 columns">
+						  <select required>
+							<option value="location" selected>Location</option>
+							{{ collection:locations }}
+						    <option value="{{ city | slugify }}">{{ city }}</option>
+							{{ /collection:locations }}
+						  </select>
+						</div>
+						<div class="small-12 medium-3 columns">
+							<input type="date" id="start" name="date" value="{{ date }}" min="{{ date }}" max="{{ date | modify_date:+3 months }}" required>
+						</div>
+						<div class="small-12 medium-2 columns">
+							<input type="time" name="time" min="09:00" max="18:00" required>
+						</div>
+						<div class="small-12 medium-1 columns">
+							<input type="number" value="hrs" name="time" min="1" max="8" required>
+						</div>
+						<div class="small-12 medium-2 columns">
+							<input class="button tiny expanded" type="submit" value="Check Availability">
+						</div>
+					</form>
+				</div>
+			</div>
+			
 		</div>
-		<form>
-			<div class="small-12 medium-2 columns">
-			  <select required>
-				<option value="location" selected>Location</option>
-			    <option value="denver">Denver</option>
-			    <option value="seattle">Seattle</option>
-			  </select>
-			</div>
-			<div class="small-12 medium-2 columns">
-				<input type="date" id="start" name="day" value="2018-07-22" min="2018-01-01" max="2018-12-31" required>
-			</div>
-			<div class="small-12 medium-2 columns">
-				<input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
-			</div>
-			<div class="small-12 medium-1 columns">
-				<input type="number" id="tentacles" name="tentacles" min="1" max="8" required>
-			</div>
-			<div class="small-12 medium-2 columns">
-				<input class="button small expanded" type="submit" value="Check Availability">
-			</div>
-		</form>
 	</div>
-</div>
+{{ endif }}
 
 	
 <section>
@@ -52,12 +61,21 @@
 	</div>
 </section>
 
+<!-- featured location -->
 <section>
+	{{ relate:featured_location }}
 	<div class="row align-center">
-		<div class="small-12 columns">
-			<h2>Featured Location</h2>
+		<div class="small-12 medium-2 columns">
+			<a href="{{ url }}">	<img src="{{ main_image }}" width="300"></a>
+		</div>
+		<div class="small-12 medium-10 columns">
+			<h2>{{ if open_for_business }}Featured Location{{ else }}Coming Soon{{ endif }}</h2>
+			<h3><a href="{{ url }}">{{ title }}</a></h3>
+			<h3><a href="tel:{{ phone }}">{{ phone }}</a></h3>
+			<p>{{ short_description }}</p>
 		</div>
 	</div>
+	{{ /relate:featured_location }}
 </section>
 
 <section>

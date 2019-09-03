@@ -22,6 +22,9 @@ sections:
         type: assets
         width: 50
         display: 'Hero Static'
+      content:
+        type: section
+        display: Content
       main_headline:
         type: text
         display: 'Main Headline'

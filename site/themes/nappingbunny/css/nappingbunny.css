@@ -5,29 +5,43 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-h3, h4, h5, h6, {
-	font-family: 'Roboto', sans-serif;
 
+h2, h3, h4, h5, h6 {
+	color: #52485a;
 }
+
 h1 {
 	font-size: 2.75em;
 	font-family: 'Nunito', sans-serif;
 	font-weight: 300;
 	line-height: 1.4;
 	text-transform: lowercase;
-	color: #52485a;
 }
+
 h2 {
-	font-family: 'Fira Sans', sans-serif;
-	font-weight: 500;
+	font-size: 1.3em;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 600;
 	line-height: 1;
-	color: #52485a;
+	border-left: 3px solid #7fbb42;
+	text-transform: lowercase;
+	margin-bottom: .8em;
+}
+h2:before { 
+	content: "\00a0 "; 
+}
+
+h3 {
+	font-size: 1.6em;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 600;
+	line-height: 1;
 }
 
 p {
 	font-family: 'Roboto', sans-serif;
 	font-weight: normal;
-	line-height: .75;
+	line-height: 1.4;
 	color: #52485a;
 }
 
@@ -270,6 +284,54 @@ div#child-modal-1 {
 	z-index: 1;
 	border: 1px solid #eee;
 	text-transform: lowercase;
+	padding: 12px 10px;
+	box-shadow: 3px 3px 8px #66666682;
+}
+
+#schedule h5 {
+	font-size: 1em;
+	padding: 10px 0 0 16px;
+	font-weight: 600;
+	color: #e7deee;
+}
+
+#schedule input:not([type=submit]), #schedule select {
+	font-size: 1rem;
+	background-color: #43374d;
+	border: none;
+	color: #eee;
+	margin-bottom: 0;
+}
+#schedule .columns {
+	padding: 0 3px;
+}
+
+#schedule input[type=submit] {
+	padding: 12px 0;
+	margin: 0;
+	max-width: 120px;
+	font-size: smaller;
+}
+
+/*-- mobile scheduler ---*/
+
+@media screen and (max-width: 39.9375em) {
+  .callout.secondary  {
+    margin-top: 0;
+    padding: 10px 30px;
+  }
+  #schedule input, #schedule select {
+  	margin: 10px 0;
+  }
+  #schedule input[type=submit] {
+  	margin-top: 18px;
+  	margin-bottom: 10px;
+  	width: 100%;
+  }
+  #schedule h5 {
+  	text-align: center;
+  	font-size: 1.5em;
+  }
 }
 
 
@@ -283,45 +345,7 @@ div#child-modal-1 {
   right: -3px;
 }
 
-.img-holder .ribbon-green {
-  font: bold 15px Sans-Serif;
-  color: #333;
-  text-align: center;
-  text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
-  -webkit-transform: rotate(45deg);
-  -moz-transform:    rotate(45deg);
-  -ms-transform:     rotate(45deg);
-  -o-transform:      rotate(45deg);
-  position: relative;
-  padding: 7px 0;
-  left: -5px;
-  top: 15px;
-  width: 120px;
-  background-color: #BFDC7A;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#BFDC7A), to(#8EBF45)); 
-  background-image: -webkit-linear-gradient(top, #BFDC7A, #8EBF45); 
-  background-image:    -moz-linear-gradient(top, #BFDC7A, #8EBF45); 
-  background-image:     -ms-linear-gradient(top, #BFDC7A, #8EBF45); 
-  background-image:      -o-linear-gradient(top, #BFDC7A, #8EBF45); 
-  color: #6a6340;
-  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
-  -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
-  box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
-}
-.img-holder .ribbon-green:before, .ribbon-green:after {
-  content: "";
-  border-top:   3px solid #6e8900;   
-  border-left:  3px solid transparent;
-  border-right: 3px solid transparent;
-  position:absolute;
-  bottom: -3px;
-}
-.img-holder .ribbon-green:before {
-  left: 0;
-}
-.img-holder .ribbon-green:after {
-  right: 0;
-}​
+
 
 video#bgvid {
 }
