@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+	font-size: 100%;
 	font-family: "Nunito", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -11,15 +12,15 @@ h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 2.75em;
+	font-size: 2.5em;
 	font-family: 'Nunito', sans-serif;
-	font-weight: 300;
+	font-weight: 200;
 	line-height: 1.4;
 	text-transform: lowercase;
 }
 
 h2 {
-	font-size: 1.3em;
+	font-size: 1.2em;
 	font-family: 'Nunito', sans-serif;
 	font-weight: 600;
 	line-height: 1;
@@ -34,14 +35,32 @@ h2:before {
 h3 {
 	font-size: 1.6em;
 	font-family: 'Nunito', sans-serif;
-	font-weight: 600;
+	font-weight: 400;
 	line-height: 1;
 }
 
+.container a:link {
+  color: #4c8f08;
+}
+
+.container a:visited {
+  color: #4c8f08;
+}
+
+.container a:hover {
+  color: #4c8f08;
+  border-bottom: 1px dotted #608f30;
+}
+
+.container a:active {
+  color: #4c8f08;
+}
+
 p {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 	font-weight: normal;
 	line-height: 1.4;
+	font-size: 1em;
 	color: #52485a;
 }
 
@@ -61,6 +80,12 @@ section.home {
 section {
 	background-color: white;
 	margin-bottom: 4em;
+}
+
+@media screen and (max-width: 39.9375em) {
+	section {
+		margin-bottom: 2em;
+	}
 }
 
 /* Nav */
@@ -107,7 +132,7 @@ section {
 	background: none;
 }
 
-.menu-item-4::before {
+.off-canvas .menu-item-4::before {
 	content: "";
 	display: block;
 	background: url("/site/themes/nappingbunny/img/icn-my-account.svg") no-repeat;
@@ -117,7 +142,7 @@ section {
 	margin: -3px 8px 0 0;   
 }
 
-.menu-item-5::before {
+.off-canvas .menu-item-5::before {
 	content: "";
 	display: block;
 	background: url("/site/themes/nappingbunny/img/icn-guest-support.svg") no-repeat;

@@ -5,7 +5,7 @@
 			{{if "phone" == { mobile_detect } }}
 				<img src="{{ theme:asset src="img/placeholder.jpg" }}" class="img-fill">
 			{{ else }}
-			<video playsinline autoplay muted poster="{{ hero_static }}">
+			<video playsinline autoplay muted loop poster="{{ hero_static }}">
 			    <source src="{{ video_link }}" type="video/mp4">
 			</video>
 			{{ endif }}
@@ -33,13 +33,13 @@
 						  </select>
 						</div>
 						<div class="small-12 medium-3 columns">
-							<input type="date" id="start" name="date" value="{{ date }}" min="{{ date }}" max="{{ date | modify_date:+3 months }}" required>
+							<input type="date" id="start" name="date" value="{{ now format="m/d/Y"  }}" min="{{ now format="m/d/Y" }}" max="{{ now format="m/d/Y" | modify_date:+3 months }}" required>
 						</div>
 						<div class="small-12 medium-2 columns">
-							<input type="time" name="time" min="09:00" max="18:00" required>
+							<input type="time" name="time" min="" max="" required>
 						</div>
 						<div class="small-12 medium-1 columns">
-							<input type="number" value="hrs" name="time" min="1" max="8" required>
+							<input type="number" value="2" name="hours" min="1" max="8" required>
 						</div>
 						<div class="small-12 medium-2 columns">
 							<input class="button tiny expanded" type="submit" value="Check Availability">
@@ -52,52 +52,54 @@
 	</div>
 {{ endif }}
 
+<div class="container">	
+	<section>
+		<div class="row align-center">
+			<div class="small-12 columns">
+				<h1 class="text-center">{{ main_headline }}</h1>
+			</div>
+		</div>
+	</section>
 	
-<section>
-	<div class="row align-center">
-		<div class="small-12 columns">
-			<h1 class="text-center">{{ main_headline }}</h1>
+	<!-- featured location -->
+	<section>
+		{{ relate:featured_location }}
+		<div class="row align-center">
+			<div class="small-12 medium-2 columns show-for-medium">
+				<a href="{{ url }}">	<img src="{{ main_image }}" width="300"></a>
+			</div>
+			<div class="small-12 medium-10 columns">
+				<h2>{{ if open_for_business }}Featured Location{{ else }}Coming Soon{{ endif }}</h2>
+				<h3>{{ title }}</h3>
+				{{ if open_for_business }}<p><a href="tel:{{ phone }}">{{ phone }}</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="{{ url }}#images">MAP</a></p>
+				<a href="{{ url }}" class="button hollow round">Make a Reservation</a>{{ endif }}
+				<p>{{ short_description }}</p>
+			</div>
 		</div>
-	</div>
-</section>
-
-<!-- featured location -->
-<section>
-	{{ relate:featured_location }}
-	<div class="row align-center">
-		<div class="small-12 medium-2 columns">
-			<a href="{{ url }}">	<img src="{{ main_image }}" width="300"></a>
+		{{ /relate:featured_location }}
+	</section>
+	
+	<section>
+		<div class="row align-center">
+			<div class="small-12 columns">
+				<h2>Promos go here.</h2>
+			</div>
 		</div>
-		<div class="small-12 medium-10 columns">
-			<h2>{{ if open_for_business }}Featured Location{{ else }}Coming Soon{{ endif }}</h2>
-			<h3><a href="{{ url }}">{{ title }}</a></h3>
-			<h3><a href="tel:{{ phone }}">{{ phone }}</a></h3>
-			<p>{{ short_description }}</p>
+	</section>
+	
+	<section>
+		<div class="row align-center">
+			<div class="small-12 columns">
+				<h2>Quote</h2>
+			</div>
 		</div>
-	</div>
-	{{ /relate:featured_location }}
-</section>
-
-<section>
-	<div class="row align-center">
-		<div class="small-12 columns">
-			<h2>Promos go here.</h2>
+	</section>
+	
+	<section class="callout panel">
+		<div class="row">
+			<div class="small-12 columns">
+				<h2>Bunny News</h2>
+			</div>
 		</div>
-	</div>
-</section>
-
-<section>
-	<div class="row align-center">
-		<div class="small-12 columns">
-			<h2>Quote</h2>
-		</div>
-	</div>
-</section>
-
-<section class="callout panel">
-	<div class="row">
-		<div class="small-12 columns">
-			<h2>Bunny News</h2>
-		</div>
-	</div>
-</section>
+	</section>
+</div>
