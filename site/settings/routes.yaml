@@ -8,5 +8,6 @@ routes:
   /reset-password: auth/password-reset
 collections:
   locations: '/collections/{slug}'
+  news: '/news/{slug}'
 taxonomies:
   tags: '/blog/tags/{slug}'
