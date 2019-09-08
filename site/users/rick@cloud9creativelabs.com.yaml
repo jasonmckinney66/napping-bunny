@@ -3,3 +3,4 @@ roles:
 first_name: Rick
 last_name: 'von Schnier'
 id: 561c321a-b5c6-4c4f-b80a-0eb439e72ae6
+password_hash: $2y$10$VMU5Oba3UK9gp2cRnhKAsuZzenFpoPIuc348e.VT/OrzH6JMSRFyi
