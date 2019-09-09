@@ -33,10 +33,10 @@
 						  </select>
 						</div>
 						<div class="small-12 medium-3 columns">
-							<input type="date" id="start" name="date" value="{{ now format="m/d/Y"  }}" min="{{ now format="m/d/Y" }}" max="{{ now format="m/d/Y" | modify_date:+3 months }}" required>
+							<input type="date" id="start" name="date" value="{{ now format="Y-m-d"  }}" min="{{ now format="Y-m-d" }}" max="" required>
 						</div>
 						<div class="small-12 medium-2 columns">
-							<input type="time" name="time" min="" max="" required>
+							<input type="time" name="time" value="12:00" step="1800" required>
 						</div>
 						<div class="small-12 medium-1 columns">
 							<input type="number" value="2" name="hours" min="1" max="8" required>
@@ -79,12 +79,74 @@
 		{{ /relate:featured_location }}
 	</section>
 	
-	<section>
+	<section class="show-for-medium">
+		<div class="row">
+			<img src="{{ theme:asset src="img/divider.svg" }}" />
+		</div>
+	</section>
+	
+	<section class="promos">
+		<!-- test 
 		<div class="row align-center">
-			<div class="small-12 columns">
-				<h2>Promos go here.</h2>
+			<div class="small-12 medium-5 columns">
+				<img src="//via.placeholder.com/460x360">
+			</div>
+			<div class="small-12 medium-2 columns">
+				<div class="row" style="margin-bottom: 30px;">
+					<div class="small-12 columns">
+						<img src="//via.placeholder.com/213">
+					</div>
+				</div>
+				<div class="row">
+					<div class="small-12 columns">
+						<img src="//via.placeholder.com/213">
+					</div>
+				</div>
+			</div>
+			<div class="small-12 medium-5 columns">
+				<div class="row" style="margin-bottom: 30px;">
+					<div class="small-12 columns">
+						<img src="//via.placeholder.com/460x114">
+					</div>
+				</div>
+				<div class="row">
+					<div class="small-12 columns">
+						<img src="//via.placeholder.com/460x214">
+					</div>
+				</div>
 			</div>
 		</div>
+		-->
+		<div class="row align-center">
+			<div class="small-12 medium-5 columns">
+				<img src="{{ glide:promo_1 width="460" height="360" fm="pjpg" dpr="2" }}">
+			</div>
+			<div class="small-12 medium-2 columns">
+				<div class="row" style="margin-bottom: 30px;">
+					<div class="small-12 columns">
+						<img src="//via.placeholder.com/213">
+					</div>
+				</div>
+				<div class="row">
+					<div class="small-12 columns">
+						<img src="//via.placeholder.com/213">
+					</div>
+				</div>
+			</div>
+			<div class="small-12 medium-5 columns">
+				<div class="row" style="margin-bottom: 30px;">
+					<div class="small-12 columns">
+						<img src="//via.placeholder.com/460x114">
+					</div>
+				</div>
+				<div class="row">
+					<div class="small-12 columns">
+						<img src="//via.placeholder.com/460x214">
+					</div>
+				</div>
+			</div>
+		</div>
+		
 	</section>
 	
 	<section>

@@ -37,3 +37,49 @@ sections:
         mode: panes
         type: collection
         display: 'Featured Location'
+      promo_grid:
+        type: section
+        display: 'Promo Grid'
+      promo_1:
+        container: main
+        folder: img
+        restrict: true
+        max_files: 1
+        mode: list
+        type: assets
+        display: 'Promo 1'
+      promo_2:
+        container: main
+        folder: img
+        restrict: true
+        max_files: 1
+        mode: list
+        type: assets
+        display: 'Promo 2'
+      promo_3:
+        container: main
+        folder: img
+        restrict: true
+        max_files: 1
+        mode: list
+        type: assets
+        display: 'Promo 3'
+      promo_3_link:
+        type: text
+        display: 'Promo 3 Link'
+      promo_4:
+        container: main
+        folder: img
+        restrict: true
+        max_files: 1
+        mode: list
+        type: assets
+        display: 'Promo 4'
+      promo_5:
+        container: main
+        folder: img
+        restrict: true
+        max_files: 1
+        mode: list
+        type: assets
+        display: 'Promo 5'
