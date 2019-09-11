@@ -4,6 +4,11 @@ hero_static: /assets/img/hd-home.jpg
 main_headline: 'relax, refresh, recharge.'
 featured_location: 0f46a159-0e5d-4507-b25f-476964e61bbf
 promo_1: /assets/img/promo-grid-1.jpg
+promo_2: /assets/img/promo-grid-2.jpg
+promo_3: /assets/img/promo-grid-3.jpg
+promo_3_link: /whats-a-pod/
+promo_4: /assets/img/promo-grid-4.png
+promo_5: /assets/img/promo-grid-5.jpg
 video_id: 'https://player.vimeo.com/external/258698796.hd.mp4?s=735ae3bf353e747288660c1ff3cdb062cdfc8b72&profile_id=174'
 title: Home
 template: home
