@@ -63,17 +63,25 @@
 	
 	<!-- featured location -->
 	<section>
+		<div class="row">
+			<div class="small-12 columns">
+				<h2>{{ if open_for_business }}Featured Location{{ else }}Coming Soon{{ endif }}</h2>
+			</div>
+		</div>
 		{{ relate:featured_location }}
 		<div class="row align-center">
 			<div class="small-12 medium-2 columns show-for-medium">
 				<a href="{{ url }}">	<img src="{{ main_image }}" width="300"></a>
 			</div>
-			<div class="small-12 medium-10 columns">
-				<h2>{{ if open_for_business }}Featured Location{{ else }}Coming Soon{{ endif }}</h2>
+			<div class="small-12 medium-4 columns">
 				<h3>{{ title }}</h3>
 				{{ if open_for_business }}<p><a href="tel:{{ phone }}">{{ phone }}</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="{{ url }}#images">MAP</a></p>
 				<a href="{{ url }}" class="button hollow round">Make a Reservation</a>{{ endif }}
-				<p>{{ short_description }}</p>
+			</div>
+			<div class="small-12 medium-6 columns">
+				<div class="callout panel arrow">
+					<p>{{ short_description }}</p>
+				</div>
 			</div>
 		</div>
 		{{ /relate:featured_location }}
@@ -88,7 +96,7 @@
 	<section class="promos">
 
 		<div class="row align-center">
-			<div class="small-12 medium-5 columns">
+			<div class="small-6 medium-5 columns show-for-medium">
 				<img src="{{ glide:promo_1 width="460" height="360" fm="pjpg" dpr="2" }}">
 			</div>
 			<div class="small-12 medium-2 columns">
@@ -98,7 +106,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="small-12 columns">
+					<div class="small-12 columns show-for-medium">
 						<a href="{{ promo_3_link }}">
 							<img src="{{ glide:promo_3 width="213" height="213" fm="pjpg" dpr="2" }}">
 						</a>

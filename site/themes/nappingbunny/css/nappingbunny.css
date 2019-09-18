@@ -356,6 +356,11 @@ section.promos img {
 	background-color: #53495a;
 }
 
+.arrow {
+	padding: 30px 20px 30px 40px !important;
+	margin-top: -30px;
+}
+
 /*-- mobile scheduler ---*/
 
 @media screen and (max-width: 39.9375em) {
@@ -374,6 +379,9 @@ section.promos img {
   #schedule h5 {
   	text-align: center;
   	font-size: 1.5em;
+  }
+  .arrow {
+  	margin-top: 20px;
   }
 }
 
