@@ -9,6 +9,10 @@ promo_3: /assets/img/promo-grid-3.jpg
 promo_3_link: /whats-a-pod/
 promo_4: /assets/img/promo-grid-4.png
 promo_5: /assets/img/promo-grid-5.jpg
+quote: |
+  <p>“Lorem ipsum dolor sit amet, great experience elit! Sed do eiusmod tempor incididunt ut quiet and clean magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+  </p>
+quote_attribution: 'JENNY H - DENVER, CO'
 video_id: 'https://player.vimeo.com/external/258698796.hd.mp4?s=735ae3bf353e747288660c1ff3cdb062cdfc8b72&profile_id=174'
 title: Home
 template: home

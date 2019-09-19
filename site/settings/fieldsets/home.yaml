@@ -83,3 +83,25 @@ sections:
         mode: list
         type: assets
         display: 'Promo 5'
+      bottom_content:
+        type: section
+        display: 'Bottom Content'
+      quote:
+        settings: Standard
+        container: main
+        folder: img
+        restrict_assets: true
+        type: redactor
+        display: Quote
+      quote_attribution:
+        type: text
+        display: 'Quote Attribution'
+      featured_news:
+        max_items: '1'
+        sort: 'date:desc'
+        label: '{{ title }}'
+        collection:
+          - news
+        mode: tags
+        type: collection
+        display: 'Featured News'
