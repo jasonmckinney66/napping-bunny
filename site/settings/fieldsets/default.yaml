@@ -61,7 +61,7 @@ sections:
           quote:
             display: Quote
             fields:
-              quote_text:
+              quote:
                 type: textarea
                 display: 'Quote Text'
                 width: 50

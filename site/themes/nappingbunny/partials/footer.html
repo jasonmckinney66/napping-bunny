@@ -1,20 +1,21 @@
 <footer>
-	<div class="middle">
-		<div class="row align-center">
-			<div class="small-12 columns text-center">
-				<a href="/" style="border: none;"><img src="{{ theme:img src="logo-footer.svg" }}" alt="logo" width="150"></a>
-				<ul class="menu">
-					{{ nav from="/" scope="tag" exclude="whats-a-pod|locations|make-a-reservation|Meet-napping-bunny|news|my-account|guest-support|meet-napping-bunny" }}
-						<li{{ if is_current or is_parent }} class="active"{{ /if }}>
-							<a href="{{ url }}" class="menu-item-{{ increment }}" style="border:  none;">{{ tag:nav_title or title }}</a>
-						</li>
-					{{ /nav }}
-					<li class="copyright">&copy; {{ now|format:Y }} {{ site_name }}</p></li>
-				</ul>
-        	</div>
-		</div>
+
+	<div class="row">
+		<div class="small-12 columns text-center">
+			<a href="/" style="border: none;"><img src="{{ theme:img src="logo-footer.svg" }}" alt="logo" width="150"></a>
+			<ul class="menu align-center">
+				{{ nav from="/" scope="tag" exclude="whats-a-pod|locations|make-a-reservation|Meet-napping-bunny|news|my-account|guest-support|meet-napping-bunny" }}
+					<li{{ if is_current or is_parent }} class="active"{{ /if }}>
+						<a href="{{ url }}" class="menu-item-{{ increment }}" style="border:  none;">{{ tag:nav_title or title }}</a>
+					</li>
+				{{ /nav }}
+			</ul>
+			<p class="copyright">&copy; {{ now|format:Y }} {{ site_name }}</p>
+    	</div>
 	</div>
+
 	<div class="color-strip"></div>
+	
 </footer>
 
     </div><!-- /off canvas content -->

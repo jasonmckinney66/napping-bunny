@@ -10,4 +10,4 @@ collections:
   locations: '/collections/{slug}'
   news: '/news/{slug}'
 taxonomies:
-  tags: '/blog/tags/{slug}'
+  news_categories: '/news/{slug}'

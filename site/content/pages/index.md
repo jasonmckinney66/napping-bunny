@@ -13,6 +13,7 @@ quote: |
   <p>“Lorem ipsum dolor sit amet, great experience elit! Sed do eiusmod tempor incididunt ut quiet and clean magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
   </p>
 quote_attribution: 'JENNY H - DENVER, CO'
+featured_news: 230c6cc0-b9e6-49d9-bb57-8c1bc3f2c465
 video_id: 'https://player.vimeo.com/external/258698796.hd.mp4?s=735ae3bf353e747288660c1ff3cdb062cdfc8b72&profile_id=174'
 title: Home
 template: home

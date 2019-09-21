@@ -1,7 +1,37 @@
 sections:
   content:
-    display: Content
+    display: 'Main Content'
+    fields:
+      news_date:
+        allow_blank: false
+        allow_time: true
+        require_time: false
+        earliest_date: 'January 1, 2019'
+        format: 'l - F jS, Y h:i A'
+        type: date
+        display: 'News or Event Date'
+        width: 50
+      content_blocks:
+        fieldset: default
+        type: partial
+        display: 'Content Blocks'
+      excerpt:
+        type: textarea
+        display: Excerpt
+  seo:
+    display: SEO
     fields: {  }
+  sidebar:
+    display: Sidebar
+    fields:
+      news_categories:
+        max_items: 1
+        sort: 'name:asc'
+        label: '{{ title }}'
+        taxonomy: news_categories
+        mode: tags
+        type: taxonomy
+        display: 'News Categories'
 taxonomies: false
 hide: true
 title: News

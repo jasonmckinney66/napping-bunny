@@ -114,6 +114,43 @@ section {
     margin-bottom: -90px;
 }
 
+.secondary-nav {
+	background: #53495a url('/site/themes/nappingbunny/img/secondary-nav.png') no-repeat left top;
+	padding: 50px 20px 20px 20px;
+	min-height: 320px;
+	background-size:  contain;
+}
+.secondary-nav h2 {
+	color: #fff;
+	font-size: 2em;
+	font-weight: 300;
+	border: none;
+	margin-bottom: .4em;
+}
+.secondary-nav ul li a:link, .secondary-nav ul li a:visited {
+	color: #fff !important;
+	
+}
+.secondary-nav ul {
+	list-style: none;
+	color: #fff;
+	font-size: 1.2em;
+}
+.secondary-nav .date {
+	list-style: none;
+	
+}
+span.new-location a:link, span.new-location a:visited {
+	padding: 8px 10px 6px 10px;
+	color: #eee !important;
+	border-radius: 4px;
+	background-color: #53495a;
+	text-transform: uppercase;
+	font-size: small;
+	margin-bottom: 1em;
+	display: inline-block;
+}
+
 /* Menu */
 
 .menu .button, .menu a {
@@ -357,8 +394,13 @@ section.promos img {
 }
 
 .arrow {
-	padding: 30px 20px 30px 40px !important;
+	padding: 20px 20px 20px 70px;
 	margin-top: -30px;
+	background: url("/site/themes/nappingbunny/img/arrow.svg") center left no-repeat #f5f5f5;
+	border-radius: 6px;
+}
+.arrow p {
+	margin-bottom: 0;
 }
 
 /*-- mobile home ---*/
@@ -382,6 +424,8 @@ section.promos img {
   }
   .arrow {
   	margin-top: 20px;
+  	background: #f5f5f5;
+  	padding: 2em;
   }
 }
 
@@ -391,6 +435,10 @@ h1.quote {
 	font-size: 2em;
 	line-height: 1.2;
 	margin: 1em 0;
+}
+p.attribution {
+	text-transform: uppercase;
+	font-size: small;
 }
 
 
@@ -417,8 +465,10 @@ video#bgvid {
 
 /* Footer */
 footer {
-	/*margin: 2em 0 0 0;*/
+	margin-bottom: 0;
 	border-top: 1px solid #333;
+	padding: 2em 1em 0 1em;
+	background-color: #53495a;
 }
 footer h4, footer h5 {
 	color: #FFF;
@@ -436,16 +486,12 @@ footer span.date {
 }
 
 .copyright {
-	color: #8a8a8a;
+	color: #947ba3;
 	padding: .9rem 1.6rem;
 }
 .color-strip {
 	background-color: #7fbb42;
 	padding: .4em 0;
-}
-.middle {
-	padding: 2em 0;
-	background-color: #53495a;
 }
 .social {
 	padding-left: 1em;
@@ -479,19 +525,7 @@ footer span.date {
 }
 
 /* Content */
-blockquote {
-	border-left: none;
-}
-blockquote, blockquote p {
-	font-size: 1.5em;
-	color: #2ba6cb;
-	font-weight: bold;
-}
-blockquote small {
-	font-size: .5em !important;
-	color: #666 !important;
-	text-transform: uppercase;
-}
+
 
 /* Buttons */
 

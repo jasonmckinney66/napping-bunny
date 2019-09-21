@@ -79,7 +79,7 @@
 				<a href="{{ url }}" class="button hollow round">Make a Reservation</a>{{ endif }}
 			</div>
 			<div class="small-12 medium-6 columns">
-				<div class="callout panel arrow">
+				<div class="arrow">
 					<p>{{ short_description }}</p>
 				</div>
 			</div>
@@ -134,15 +134,29 @@
 			<div class="small-12 columns text-center">
 				<img src="{{ theme:img src="icon-airplane.svg" }}" width="70" class="text-center">
 				<h1 class="quote">{{ quote | strip_tags:p }}</h1>
-				<p><strong>{{ quote_attribution }}</strong></p>
+				<p class="attribution">{{ quote_attribution }}</p>
 			</div>
 		</div>
 	</section>
 	
-	<section class="callout panel">
+	<section class="callout panel news">
 		<div class="row">
-			<div class="small-12 columns">
+			<div class="small-12 medium-6 columns">
 				<h2>Bunny News</h2>
+				{{ relate:featured_news }}
+				<h3><a href="{{ url }}">{{ title }}</a></h3>
+					<p class="date">{{ news_date }}</p>
+					<span class="new-location">{{ news_categories }}<a href="{{ url }}">{{ title }}</a>{{ /news_categories }}</span>
+					<p>{{ excerpt }}</p>
+				{{ /relate:featured_news }}
+			</div>
+			<div class="small-12 medium-6 columns text-right center-for-small-only secondary-nav">
+				<h2>more news</h2>
+				<ul>
+				{{ taxonomy:news_categories }}
+				    <li><a href="{{ url }}">{{ title }}</a></li>
+				{{ /taxonomy:news_categories }}
+				</ul>
 			</div>
 		</div>
 	</section>
