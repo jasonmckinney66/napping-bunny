@@ -1,16 +1,28 @@
+<div class="row hide-for-large" style="background: #f5f5f5;">
+	<div class="small-12 columns text-center">
+		<a href="#top" style="color: #53495a; margin: 2em; display: block; font-weight: 700; text-decoration: underline;" data-smooth-scroll >Back to Top</a>
+	</div>
+</div>
+
 <footer>
 
 	<div class="row">
 		<div class="small-12 columns text-center">
+			
 			<a href="/" style="border: none;"><img src="{{ theme:img src="logo-footer.svg" }}" alt="logo" width="150"></a>
-			<ul class="menu align-center">
-				{{ nav from="/" scope="tag" exclude="whats-a-pod|locations|make-a-reservation|Meet-napping-bunny|news|my-account|guest-support|meet-napping-bunny" }}
-					<li{{ if is_current or is_parent }} class="active"{{ /if }}>
-						<a href="{{ url }}" class="menu-item-{{ increment }}" style="border:  none;">{{ tag:nav_title or title }}</a>
-					</li>
-				{{ /nav }}
-			</ul>
+			
+			<div class="text-center" style="display: inline-flex;">
+				<ul class="menu align-center">
+					{{ nav from="/" scope="tag" exclude="whats-a-pod|locations|make-a-reservation|Meet-napping-bunny|news|my-account|guest-support|meet-napping-bunny" }}
+						<li{{ if is_current or is_parent }} class="active"{{ /if }}>
+							<a href="{{ url }}" class="menu-item-{{ increment }}" style="border:  none;">{{ tag:nav_title or title }}</a>
+						</li>
+					{{ /nav }}
+				</ul>
+			</div>
+			
 			<p class="copyright">&copy; {{ now|format:Y }} {{ site_name }}</p>
+			
     	</div>
 	</div>
 

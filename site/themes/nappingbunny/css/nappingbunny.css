@@ -151,6 +151,15 @@ span.new-location a:link, span.new-location a:visited {
 	display: inline-block;
 }
 
+@media screen and (max-width: 39.9375em) {
+	.secondary-nav {
+		background: #53495a;
+		padding: 50px 20px 20px 20px;
+		min-height: 320px;
+		background-size:  contain;
+	}
+}
+
 /* Menu */
 
 .menu .button, .menu a {
@@ -347,7 +356,7 @@ div#child-modal-1 {
 	z-index: 1;
 	border: 1px solid #eee;
 	text-transform: lowercase;
-	padding: 12px 10px;
+	padding: 12px 20px;
 	box-shadow: 3px 3px 8px #66666682;
 }
 
@@ -372,8 +381,7 @@ div#child-modal-1 {
 #schedule input[type=submit] {
 	padding: 12px 0;
 	margin: 0;
-	max-width: 120px;
-	font-size: smaller;
+	font-size: small;
 }
 
 input:invalid+span:after {
@@ -427,6 +435,13 @@ section.promos img {
   	background: #f5f5f5;
   	padding: 2em;
   }
+  .callout.panel.news {
+  	padding: 2em 1em 0 1em;
+  }
+  .bottom-radius-home {
+  	height: 193px;
+  	margin-bottom: 2em;
+  }
 }
 
 
@@ -467,7 +482,7 @@ video#bgvid {
 footer {
 	margin-bottom: 0;
 	border-top: 1px solid #333;
-	padding: 2em 1em 0 1em;
+	padding: 2em 0 0 0;
 	background-color: #53495a;
 }
 footer h4, footer h5 {

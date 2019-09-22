@@ -1,4 +1,4 @@
-<div class="off-canvas-wrapper">
+<div id="top" class="off-canvas-wrapper">
 
 	<!-- Off-Canvas -->
     <div class="off-canvas position-right" id="offCanvas" data-off-canvas>
@@ -32,11 +32,11 @@
     <!-- Desktop -->
     <div class="off-canvas-content" data-off-canvas-content>
 
-		<div data-sticky-container>
-			<div data-sticky data-options="marginTop:0;">
+		<div class="show-for-large" data-sticky-container>
+			<div data-sticky data-options="marginTop:0;" data-sticky-on="medium">
 
 				<div class="top-bar">
-    				<div class="top-bar-left show-for-large" id="example-menu">
+    				<div class="top-bar-left" id="example-menu">
     					
       					<ul class="vertical medium-horizontal dropdown menu show-for-large" data-responsive-menu="accordion medium-dropdown">
       						<li>
@@ -46,7 +46,7 @@
 	  					
     				</div>
     
-    				<div class="top-bar-right show-for-large">
+    				<div class="top-bar-right">
     					<ul class="menu">
 							<li><a href="/whats-a-pod" style="border: none;">What's a Pod?</a></li>
 							{{ if open_for_business }}
@@ -57,16 +57,18 @@
     					</ul>
     					
     				</div>
-    				
-    				<!-- Mobile Top Nav -->
-    
-    				<div class="small-6 columns hide-for-large">
-    					<a href="/" class="hide-for-large logo"><a href="/"><img src="{{ theme:img src="np-logo-horiz-rgb.svg" }}" alt="logo" width="160"></a></a>
-    				</div>
-
-    			</div><!--/top-bar-->
-    		
-  			</div><!--/data-sticky-->
-  			
+				</div><!--/top-bar-->
+			</div><!--/data-sticky-->	
 		</div><!--/sticky-container-->
+		
+    	<div class="top-bar hide-for-large" style="background-color: #39353b; opacity: .9;">		
+    		<!-- Mobile Top Nav -->
+    
+    		<div class="small-6 columns">
+    			<a href="/" class="hide-for-large logo"><a href="/"><img src="{{ theme:img src="np-logo-horiz-rgb.svg" }}" alt="logo" width="160"></a></a>
+    		</div>
+			<div class="small-6 columns">
+				<a data-toggle="offCanvas" class="float-right" style="border: none;"><i class="fas fa-bars fa-2x" style="color: white;"></i></a>
+			</div>
 
+    	</div><!--/top-bar-->
