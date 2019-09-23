@@ -71,12 +71,12 @@
 		{{ relate:featured_location }}
 		<div class="row align-center">
 			<div class="small-12 medium-2 columns show-for-medium">
-				<a href="{{ url }}">	<img src="{{ main_image }}" width="300"></a>
+				<a href="{{ url }}">	<img src="{{ thumb_image }}" width="300"></a>
 			</div>
 			<div class="small-12 medium-4 columns">
-				<h3>{{ title }}</h3>
-				{{ if open_for_business }}<p><a href="tel:{{ phone }}">{{ phone }}</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="{{ url }}#images">MAP</a></p>
-				<a href="{{ url }}" class="button hollow round">Make a Reservation</a>{{ endif }}
+				<h3><a href="{{ url }}" style="color: #52485a; border-bottom: none;">{{ title }}</a></h3>
+				{{ if open_for_business }}<p><a href="tel:{{ phone }}">{{ phone }}</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="{{ url }}#map">MAP</a></p>
+				<a href="/make-a-reservation?loc={{ city | slugify }}" class="button hollow round">Make a Reservation</a>{{ endif }}
 			</div>
 			<div class="small-12 medium-6 columns">
 				<div class="arrow">

@@ -5,24 +5,52 @@ sections:
       title:
         display: Title
         type: text
-        width: 50
+        localizable: true
+      supporting_images:
+        type: section
+        display: 'Supporting Images'
+      thumb_image:
+        container: main
+        folder: img
+        restrict: true
+        max_files: 1
+        mode: list
+        type: assets
+        display: 'Thumb Image'
       main_image:
         container: main
         folder: img
         restrict: true
         max_files: 1
-        mode: grid
+        mode: list
         type: assets
-        width: 50
         display: 'Main Image'
-      city:
-        type: text
-        width: 50
-        display: City
+      alternate_views:
+        container: main
+        folder: img
+        restrict: true
+        mode: list
+        type: assets
+        display: 'Alternate Views'
+      map_image:
+        container: main
+        folder: img
+        restrict: true
+        max_files: 1
+        mode: list
+        type: assets
+        display: 'Map Image'
+      location_information:
+        type: section
+        display: 'Location Information'
       phone:
         type: text
         width: 50
         display: Phone
+      city:
+        type: text
+        width: 50
+        display: City
       short_description:
         type: textarea
         display: 'Short Description'

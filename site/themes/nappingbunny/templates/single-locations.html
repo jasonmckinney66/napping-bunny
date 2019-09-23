@@ -1,0 +1,79 @@
+{{ partial:header }}
+
+<div class="container">
+    
+
+	<article>
+		<div class="row">
+			<div class="small-12 medium-6 columns">
+			
+      			{{ assets:main_image }}
+					<img id="largeImage" class="thumbnail" src="{{ glide:url width="672" height="395" fit="crop" }}">
+				{{ /assets:main_image }}
+      			
+      			{{ if alternate_views }}
+				<div class="row small-up-2 medium-up-4 thumb-container">
+				{{ assets:alternate_views }}
+					<div id="thumbs" class="column column-block gutter-small">
+						<img class="thumb" src="{{ url }}" alt="{{ alt }}">
+					</div>
+				{{ /assets:alternate_views }}
+        		</div>
+        		{{ endif }}
+        		
+			</div>
+			
+      		<div class="small-12 medium-6 columns">
+      
+        		<h2>{{ title }}</h2>
+        		<p>{{ long_description }}</p>
+				
+				<div class="row">
+					<div class="small-12 medium-6 columns">     		
+						<a src="/make-a-reservation?loc={{ city | slugify }}"class="button round expanded">Make a Reservation</a>
+        			</div>
+					<div class="small-12 medium-6 columns">
+						<a href="/locations" class="button round hollow expanded">See More Locations</a>
+					</div>
+				</div>
+				
+				<div class="row share">
+					<div class="small-12 medium-12 columns">
+						<h5>Share this Location</h5>
+        				<a class="button small round"><i class="fab fa-facebook fa-2x"></i></a>
+        				<a class="button small round"><i class="fab fa-twitter fa-2x"></i></a>
+        				<a class="button small round"><i class="fab fa-pinterest fa-2x"></i></a>
+          			</div>
+          		</div>
+          		
+        	</div>
+    	</div>
+    
+    	<section class="callout panel">
+    	<div class="row align-center">
+    		<div class="small-12 columns">
+
+      			<ul class="tabs" data-tabs id="example-tabs">
+					<li class="tabs-title is-active"><a href="#panel1" onclick="event.preventDefault();">Find Us</a></li>
+        			<li class="tabs-title"><a href="#panel2" onclick="event.preventDefault();">Reviews</a></li>
+        			
+      			</ul>
+      				
+      			<div class="tabs-content" data-tabs-content="example-tabs">
+      			
+        			<div class="tabs-panel is-active text-center" id="panel1">
+          				{{ assets:map_image }}
+          					<img id="map" src="{{ glide:url width="672" height="395" fit="crop" }}">
+          				{{ /assets:map_image }}
+					</div>
+					<div class="tabs-panel" id="panel2">
+						<p>This will be powered by Discus. <a href="https://disqus.com/profile/signup/?next=https%3A//home.disqus.com/admin/">Sign-up.</a></p>
+					</div>
+      		
+	      		</div>
+      	</section>
+      		
+    	</div>
+
+	</article>
+</div>

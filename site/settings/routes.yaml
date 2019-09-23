@@ -7,7 +7,7 @@ routes:
   /forgot-password: auth/password-forgot
   /reset-password: auth/password-reset
 collections:
-  locations: '/collections/{slug}'
+  locations: '/locations/{slug}'
   news: '/news/{slug}'
 taxonomies:
   news_categories: '/news/{slug}'
