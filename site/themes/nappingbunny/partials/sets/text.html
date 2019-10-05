@@ -1,13 +1,13 @@
 {{ if columns == "left" }}
-	<div class="small-12 medium-7 columns">
+	<div class="small-12 medium-9 columns text-image-block">
 		{{ content }}
 	</div>
 {{ elseif columns == "right" }}
-	<div class="small-12 medium-7 large-push-3 columns">
+	<div class="small-12 medium-9 medium-push-3 columns text-image-block">
 		{{ content }}
 	</div>
 {{ else }}
-	<div class="small-12 medium-10 columns">
+	<div class="small-12 columns text-block">
 		{{ content }}
 	</div>
 {{ endif }}

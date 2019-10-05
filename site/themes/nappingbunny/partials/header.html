@@ -1,12 +1,8 @@
 <div class="bottom-mask">
 	<div class="bottom-radius">
-		<div class="expanded row hero" style="background-image: url('https://source.unsplash.com/user/vanschneider/1260x750')">
+		<div class="expanded row hero" style="background-image: url('{{ if header_image }}{{ glide:header_image width="1640" height="560" fit="crop" dpr="2" fm="webp" }}{{ else }}{{ theme:img src='hd-default.jpg' }}'){{ endif }}; background-position: 50% 50%; background-size: auto;">
 			<div class="small-12 columns">
-				{{ if segment_1 == "products" }}
-				<h1 class="text-center">Products</h1>
-				{{ else }}
 				<h1 class="text-center">{{ title }}</h1>
-				{{ endif }}
 			</div>
 		</div>
 	</div>

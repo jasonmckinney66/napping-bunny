@@ -4,6 +4,14 @@ sections:
   main:
     display: 'Page Content'
     fields:
+      header_image:
+        container: main
+        folder: img
+        restrict: true
+        max_files: 1
+        mode: grid
+        type: assets
+        display: 'Header Image'
       body:
         type: replicator
         display: Body

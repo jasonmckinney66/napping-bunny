@@ -286,6 +286,9 @@ div#child-modal-1 {
 	display: inline-block;
 	margin-bottom: 2.5em;
 }
+.close-button {
+	outline: none;
+}
 
 /* Headers */
 .hero {
@@ -309,6 +312,7 @@ div#child-modal-1 {
 .hero h1 {
 	color: #fff;
 	padding-top: 4em;
+	font-weight: 400;
 }
 
 .bottom-mask {
@@ -338,7 +342,7 @@ div#child-modal-1 {
 	border-radius: 0 0 200% 200%;
 	overflow: hidden;
 	width: 100%;
-	height:450px
+	height:600px
 }
 .bottom-radius-home video {
 	margin: 0 auto;
@@ -439,8 +443,8 @@ section.promos img {
   	padding: 2em 1em 0 1em;
   }
   .bottom-radius-home {
-  	height: 193px;
-  	margin-bottom: 2em;
+  	height: 175px;
+  	margin-bottom: 0;
   }
 }
 
@@ -540,6 +544,13 @@ footer span.date {
 }
 
 /* Content */
+
+.text-image-block {
+	margin-bottom: 3em;
+}
+.text-block {
+	margin-bottom: 2em;
+}
 
 
 /* Buttons */
