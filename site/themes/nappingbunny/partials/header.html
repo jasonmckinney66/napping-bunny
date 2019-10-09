@@ -1,6 +1,6 @@
 <div class="bottom-mask">
 	<div class="bottom-radius">
-		<div class="expanded row hero" style="background-image: url('{{ if header_image }}{{ header_image }}{{ else }}{{ theme:img src='hd-default.jpg' }}{{ endif }}'); background-position: 50% 50%; background-size: auto;">
+		<div class="expanded row hero" style="background-image: url('{{ if header_image }}{{ glide:header_image width="1640" height="560" fit="crop" }}{{ else }}{{ theme:img src='hd-default.jpg' }}{{ endif }}'); background-position: 50% 50%; background-size: auto;">
 			<div class="small-12 columns">
 				<h1 class="text-center">{{ title }}</h1>
 			</div>

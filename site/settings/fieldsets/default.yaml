@@ -83,6 +83,29 @@ sections:
               table:
                 type: table
                 display: Table
+          accordion:
+            display: Accordion
+            fields:
+              accordion_header:
+                type: text
+                display: 'Accordion Section Header'
+              accordion:
+                sets:
+                  accordion:
+                    display: Accordion
+                    fields:
+                      accordion_title:
+                        type: text
+                        display: 'Accordion Title'
+                      accordion_text:
+                        settings: Standard
+                        container: main
+                        folder: img
+                        restrict_assets: true
+                        type: redactor
+                        display: 'Accordion Text'
+                type: replicator
+                display: Accordion
   seo:
     display: SEO
     fields: {  }
