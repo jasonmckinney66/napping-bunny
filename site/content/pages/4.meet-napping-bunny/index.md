@@ -5,6 +5,7 @@ body:
       <h2>about us</h2>
       <h4>We accommodate travelers, providing a sanctuary from the chaos of delayed flights, and an escape from the stress of over-crowed airports. We give our customers a cozy and comfortable personal environment that promotes well-being and relaxation.</h4>
     columns: full
+    proportion: na
   -
     type: text
     content: |
@@ -22,10 +23,12 @@ body:
       	<li><span class="normaltextrun">Quality rest</span></li>
       </ul>
     columns: left
+    proportion: fifty
   -
     type: image
     inline_image: /assets/img/denver_international_airport.jpg
     alignment: right
+    proportion: fifty
   -
     type: quote
     quote: '"We provide you with a temporary sanctuary and a secure space to rest and recuperate, rejuvenate, regenerate while waiting for your next flight, preparing for an early flight out, or just a respite from the chaos of a busy airport."'
@@ -112,6 +115,7 @@ body:
       <p>Napping Bunny offers guest pods that are specially adapted for physically challenged guests. These pods are in full compliance with the Americans with Disabilities Act.
       </p>
     columns: full
+    proportion: na
 title: 'Meet Napping Bunny'
 fieldset: default
 id: a0523237-9134-4720-b2fe-0930956cb6eb

@@ -1,3 +1,4 @@
+header_image: /assets/img/hd-grass.jpg
 body:
   -
     type: text

@@ -25,7 +25,6 @@ sections:
                 settings: Standard
                 container: main
                 folder: img
-                width: 75
               columns:
                 type: radio
                 display: Column
@@ -33,8 +32,21 @@ sections:
                   left: Left
                   right: Right
                   full: Full
-                width: 25
+                width: 50
                 default: full
+                inline: true
+                instructions: 'Should this be full width or share the row with another element?'
+              proportion:
+                options:
+                  na: 'Doesn''t Apply'
+                  fifty: 50%
+                  seventy-five: 75%
+                inline: true
+                type: radio
+                width: 50
+                display: Proportion
+                default: na
+                instructions: 'Applies only if Column is left or right.'
           subheadline:
             display: Subheadline
             fields:
@@ -56,7 +68,7 @@ sections:
                 folder: img
                 restrict: true
                 max_files: 1
-                width: 50
+                width: 33
               alignment:
                 type: radio
                 display: Alignment
@@ -64,8 +76,18 @@ sections:
                   left: Left
                   right: Right
                   center: Center
-                width: 50
+                width: 33
                 default: center
+              proportion:
+                options:
+                  full: Full
+                  fifty: 50%
+                  twenty-five: 25%
+                inline: false
+                type: radio
+                width: 33
+                display: Proportion
+                default: full
           quote:
             display: Quote
             fields:

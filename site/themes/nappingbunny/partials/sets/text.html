@@ -1,13 +1,29 @@
-{{ if columns == "left" }}
-	<div class="small-12 medium-9 columns text-image-block">
-		{{ content }}
-	</div>
-{{ elseif columns == "right" }}
-	<div class="small-12 medium-9 medium-push-3 columns text-image-block">
-		{{ content }}
-	</div>
+{{ if proportion == "fifty" }}
+
+	{{ if columns == "left" }}
+		<div class="small-12 medium-6 columns text-image-block">
+			{{ content }}
+		</div>
+	{{ elseif columns == "right" }}
+		<div class="small-12 medium-6 medium-push-6 columns text-image-block">
+			{{ content }}
+		</div>
+	{{ endif }}
+	
+{{ elseif proportion == "seventy-five" }}	
+
+	{{ if columns == "left" }}
+		<div class="small-12 medium-9 columns text-image-block">
+			{{ content }}
+		</div>
+	{{ elseif columns == "right" }}
+		<div class="small-12 medium-9 medium-push-3 columns text-image-block">
+			{{ content }}
+		</div>
+	{{ endif }}
+		
 {{ else }}
-	<div class="small-12 columns text-block">
-		{{ content }}
-	</div>
+		<div class="small-12 columns text-block">
+			{{ content }}
+		</div>
 {{ endif }}

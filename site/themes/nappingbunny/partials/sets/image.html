@@ -1,14 +1,34 @@
-{{ if alignment == "right" }}
+{{ if proportion == "fifty" }}
 
-	<div class="small-12 medium-3 columns">
-		<img src="{{ inline_image }}" alt="{{ alt }}">
-	</div>
-
-{{ elseif alignment == "left" }}
-
-	<div class="small-12 medium-3 medium-pull-9 columns">
-		<img src="{{ inline_image }}" alt="{{ alt }}">
-	</div>
+	{{ if alignment == "right" }}
+	
+		<div class="small-12 medium-6 columns">
+			<img src="{{ inline_image }}" alt="{{ alt }}">
+		</div>
+	
+	{{ elseif alignment == "left" }}
+	
+		<div class="small-12 medium-6 medium-pull-6 columns">
+			<img src="{{ inline_image }}" alt="{{ alt }}">
+		</div>
+		
+	{{ endif }}
+	
+{{ elseif proportion == "twenty-five" }}
+	
+	{{ if alignment == "right" }}
+	
+		<div class="small-12 medium-3 columns">
+			<img src="{{ inline_image }}" alt="{{ alt }}">
+		</div>
+	
+	{{ elseif alignment == "left" }}
+	
+		<div class="small-12 medium-3 medium-pull-9 columns">
+			<img src="{{ inline_image }}" alt="{{ alt }}">
+		</div>
+		
+	{{ endif }}
 
 {{ else }}
 
