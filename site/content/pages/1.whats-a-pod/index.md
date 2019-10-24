@@ -5,13 +5,12 @@ body:
     content: |
       <h1 class="text-center">A Napping Bunny airport pod is...</h1>
       <p class="callout">
-      	your personal snuggly sanctuary
+      	your personal snuggly safe little sanctuary
       </p>
       <p class="callout">
-      	an escape from chaos
+      	an escape from the chaos of crowded airports
       </p>
-      <p class="callout">
-      	refresh, recharge
+      <p class="callout">a place to rest, prepare, relax and recharge
       </p>
     columns: full
     proportion: na
