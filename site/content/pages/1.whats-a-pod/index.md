@@ -2,18 +2,26 @@ header_image: /assets/img/hd-clouds-2x.jpg
 body:
   -
     type: text
-    content: |
-      <h1 class="text-center">A Napping Bunny airport pod is...</h1>
-      <p class="callout">
-      	your personal snuggly safe little sanctuary
-      </p>
-      <p class="callout">
-      	an escape from the chaos of crowded airports
-      </p>
-      <p class="callout">a place to rest, prepare, relax and recharge
-      </p>
+    content: '<h1 class="text-center">A Napping Bunny airport pod is...</h1>'
     columns: full
     proportion: na
+  -
+    type: grid
+    columns: '3'
+    border: true
+    block_grid:
+      -
+        type: block_grid
+        content: '<h4 style="text-align: center;">your personal snuggly sanctuary</h4>'
+      -
+        type: block_grid
+        content: '<h4 style="text-align: center;">an escape from chaos</h4>'
+      -
+        type: block_grid
+        content: |
+          <h4></h4>
+          <h4 style="box-sizing: inherit; margin-bottom: 0px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Roboto, Arial, sans-serif; color: rgb(82, 72, 90); font-size: 1.5625rem; line-height: 1.4;"></h4>
+          <h4 style="text-align: center;">refresh, recharge</h4>
   -
     type: text
     content: |

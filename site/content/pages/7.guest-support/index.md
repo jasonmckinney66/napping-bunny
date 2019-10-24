@@ -2,9 +2,10 @@ body:
   -
     type: text
     content: |
-      <h3 class="text-center">Please complete the form below or search our FAQs.</h3><footer></footer><section>
-      <p>This page will be populated with content and published when the first location is ready to open for business.
-      </p></section>
+      <h3 class="text-center">Please complete the form below or search our FAQs.</h3>
+      <p>&nbsp;</p>
+      <p class="text-center">This page will be populated with content and published when the first location is ready to open for business.
+      </p>
     columns: full
     proportion: na
 title: 'Guest Support'

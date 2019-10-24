@@ -4,7 +4,8 @@ body:
     type: text
     content: |
       <h3 class="text-center">Reserve your pod today at one of our convenient locations.</h3>
-      <p class="text-center" style="margin-top: 4em;"><img src="/assets/img/make-a-reservation-placeholder.jpg" alt="" width="800">
+      <p>&nbsp;</p>
+      <p class="text-center"><img src="/assets/img/booking-placeholder.jpg" alt="">
       </p>
     columns: full
     proportion: na

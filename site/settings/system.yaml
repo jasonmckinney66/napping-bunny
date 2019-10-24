@@ -28,6 +28,7 @@ redactor:
         - unorderedlist
         - orderedlist
         - html
+        - alignment
   -
     name: Basic
     settings:
