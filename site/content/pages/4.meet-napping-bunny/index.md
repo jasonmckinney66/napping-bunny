@@ -100,7 +100,7 @@ body:
     type: text
     content: |
       <h3>We help people who are:</h3>
-      <ul>
+      <ul class="check">
       	<li><span class="normaltextrun">Are desperate for rest or solitude</span></li>
       	<li><span class="normaltextrun">Are anxious travelers</span></li>
       	<li><span class="normaltextrun">Enjoy pre-planning travel</span></li>

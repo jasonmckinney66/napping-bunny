@@ -568,10 +568,15 @@ footer span.date {
 .text-image-block {
 	margin-bottom: 3em;
 }
+.image-block {
+	margin-bottom: 1em;
+}
 .text-block {
 	margin-bottom: 2em;
 }
-
+.grid {
+	margin-bottom: 2em;
+}
 .quote-block {
 	margin-bottom: 3em;
 }
@@ -584,6 +589,9 @@ footer span.date {
 }
 .accordion-title:focus, .accordion-title:hover {
     background-color: inherit;
+}
+li.accordion-item h3 {
+    padding-right: 15px;
 }
 .container a:hover {
     border-bottom: none;

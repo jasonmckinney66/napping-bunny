@@ -128,6 +128,31 @@ sections:
                         display: 'Accordion Text'
                 type: replicator
                 display: Accordion
+          grid:
+            display: Grid
+            fields:
+              columns:
+                type: text
+                width: 75
+                display: 'Number of items per row'
+              border:
+                type: toggle
+                width: 25
+                display: Border
+              block_grid:
+                sets:
+                  block_grid:
+                    display: 'Block Grid'
+                    fields:
+                      content:
+                        settings: Standard
+                        container: main
+                        folder: img
+                        restrict_assets: true
+                        type: redactor
+                        display: Content
+                type: replicator
+                display: 'Block Grid'
   seo:
     display: SEO
     fields: {  }
