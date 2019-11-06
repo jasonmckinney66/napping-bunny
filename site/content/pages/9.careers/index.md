@@ -1,3 +1,4 @@
+header_image: /assets/img/hd-clouds-2x.jpg
 body:
   -
     type: text

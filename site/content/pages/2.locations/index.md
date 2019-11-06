@@ -3,9 +3,10 @@ body:
   -
     type: text
     content: |
-      <p>Choose from one of our amazing locations...
-      </p>
+      <h3 class="text-center">Choose from one of our amazing locations...
+      </h3>
     columns: full
+    proportion: na
 title: Locations
 fieldset: default
 mount: locations

@@ -2,11 +2,11 @@
 
 	{{ if columns == "left" }}
 		<div class="small-12 medium-6 columns text-image-block">
-			{{ content }}
+			{{ content|widont }}
 		</div>
 	{{ elseif columns == "right" }}
 		<div class="small-12 medium-6 medium-push-6 columns text-image-block">
-			{{ content }}
+			{{ content|widont }}
 		</div>
 	{{ endif }}
 	
@@ -14,16 +14,16 @@
 
 	{{ if columns == "left" }}
 		<div class="small-12 medium-9 columns text-image-block">
-			{{ content }}
+			{{ content|widont }}
 		</div>
 	{{ elseif columns == "right" }}
 		<div class="small-12 medium-9 medium-push-3 columns text-image-block">
-			{{ content }}
+			{{ content|widont }}
 		</div>
 	{{ endif }}
 		
 {{ else }}
 		<div class="small-12 columns text-block">
-			{{ content }}
+			{{ content|widont }}
 		</div>
 {{ endif }}

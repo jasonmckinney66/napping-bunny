@@ -135,7 +135,7 @@ section {
 }
 
 .secondary-nav {
-	background: #53495a url('/site/themes/nappingbunny/img/secondary-nav.png') no-repeat left top;
+	background: #53495a url('/site/themes/nappingbunny/img/secondary-nav-2.png') no-repeat left top;
 	padding: 50px 20px 20px 20px;
 	min-height: 320px;
 	background-size:  contain;
@@ -474,6 +474,7 @@ h1.quote {
 	font-size: 2em;
 	line-height: 1.2;
 	margin: 1em 0;
+	text-transform: none;
 }
 p.attribution {
 	text-transform: uppercase;
@@ -592,6 +593,15 @@ footer span.date {
 }
 li.accordion-item h3 {
     padding-right: 15px;
+}
+.accordion-controls {
+	margin-bottom: 1em;
+}
+div.accordion-controls a {
+	color: #4c8f08 !important;
+	text-transform: uppercase;
+	font-size: small;
+	margin: 0 1em;
 }
 .container a:hover {
     border-bottom: none;

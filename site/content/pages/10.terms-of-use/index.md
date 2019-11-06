@@ -1,3 +1,4 @@
+header_image: /assets/img/hd-sheets.jpg
 body:
   -
     type: text
@@ -43,6 +44,7 @@ body:
       <p>If any of these terms are determined to be illegal, invalid or otherwise unenforceable, it shall be severed and deleted from these terms and the remaining terms shall survive and continue to be binding and enforceable.
       </p>
     columns: full
+    proportion: na
 title: 'Terms of Use'
 fieldset: default
 id: d9ded123-75ac-44b0-8da4-6a9b4a5bd304
