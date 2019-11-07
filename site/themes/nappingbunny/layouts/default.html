@@ -8,8 +8,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Another awesome Statamic site">
-    <title>{{ title ensure_right=" / " }}{{ site_name }}</title>
+	
+	<title>{{ if meta_title }}{{ meta_title }}{{ else }}{{ title }}{{ /if }} - {{ site_name }}</title>
+	<meta name="description" content="{{ meta_description }}">
+	
     <link rel="stylesheet" href="{{ theme:css src='foundation.min' }}">
     <link rel="stylesheet" href="{{ theme:css cache_bust='true' }}">
 	<link href="https://fonts.googleapis.com/css?family=Nunito:200,400,600&display=swap" rel="stylesheet">

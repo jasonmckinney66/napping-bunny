@@ -155,7 +155,13 @@ sections:
                 display: 'Block Grid'
   seo:
     display: SEO
-    fields: {  }
+    fields:
+      meta_title:
+        type: text
+        display: 'Meta Title'
+      meta_description:
+        type: textarea
+        display: 'Meta Description'
   sidebar:
     display: Sidebar
     fields:
