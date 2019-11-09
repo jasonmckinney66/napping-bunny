@@ -15,12 +15,11 @@ body:
         content: '<h4 style="text-align: center;">your personal snuggly, convenient, and secure sanctuary</h4>'
       -
         type: block_grid
-        content: '<h4 style="text-align: center;">an escape from the masses, chaos, and stress of airports</h4>'
+        content: '<h4 style="text-align: center;" rel="text-align: center;">an escape from the masses, chaos, and stress of airports</h4>'
       -
         type: block_grid
         content: |
-          <h4></h4>
-          <h4 style="box-sizing: inherit; margin-bottom: 0px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Roboto, Arial, sans-serif; color: rgb(82, 72, 90); font-size: 1.5625rem; line-height: 1.4;"></h4>
+          <h4 style="box-sizing: inherit; margin-bottom: 0px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Roboto, Arial, sans-serif; color: rgb(82, 72, 90); font-size: 1.5625rem; line-height: 1.4;" rel="box-sizing: inherit; margin-bottom: 0px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Roboto, Arial, sans-serif; color: rgb(82, 72, 90); font-size: 1.5625rem; line-height: 1.4;"></h4>
           <h4 style="text-align: center;">complete privacy for you to sleep, refresh, prepare, and recharge</h4>
   -
     type: text
@@ -56,10 +55,18 @@ body:
       </p>
       <p> Backup power sources ensure that even in the event of a blackout, you are safe and that your alarm will wake you at your designated time. An accessory pocket with a power outlet ensures your essential items are right at hand.
       </p>
-      <p><br>
-      </p>
+    columns: left
+    proportion: fifty
+  -
+    type: image
+    inline_image: /assets/img/features.jpg
+    alignment: right
+    proportion: fifty
+  -
+    type: text
+    content: |
       <h3>Safety & Security</h3>
-      <p>Fireproof aluminum panels are used for the walls and ceiling and the curtain is flame and lightproof.  Don't worry, we've got you safe and sound!
+      <p>Fireproof aluminum panels are used for the walls and ceiling and the curtain is flame and lightproof. Don't worry, we've got you safe and sound!
       </p>
     columns: full
     proportion: na
