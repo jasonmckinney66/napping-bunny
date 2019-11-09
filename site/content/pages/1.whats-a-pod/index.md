@@ -12,16 +12,16 @@ body:
     block_grid:
       -
         type: block_grid
-        content: '<h4 style="text-align: center;">your personal snuggly sanctuary</h4>'
+        content: '<h4 style="text-align: center;">your personal snuggly, convenient, and secure sanctuary</h4>'
       -
         type: block_grid
-        content: '<h4 style="text-align: center;">an escape from chaos</h4>'
+        content: '<h4 style="text-align: center;">an escape from the masses, chaos, and stress of airports</h4>'
       -
         type: block_grid
         content: |
           <h4></h4>
           <h4 style="box-sizing: inherit; margin-bottom: 0px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Roboto, Arial, sans-serif; color: rgb(82, 72, 90); font-size: 1.5625rem; line-height: 1.4;"></h4>
-          <h4 style="text-align: center;">refresh, recharge</h4>
+          <h4 style="text-align: center;">complete privacy for you to sleep, refresh, prepare, and recharge</h4>
   -
     type: text
     content: |
