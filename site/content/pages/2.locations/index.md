@@ -1,4 +1,4 @@
-header_image: /assets/img/hd-grass.jpg
+header_image: /assets/img/susan-clouds-2.jpg
 body:
   -
     type: text

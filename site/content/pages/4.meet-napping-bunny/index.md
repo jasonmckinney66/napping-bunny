@@ -1,3 +1,4 @@
+header_image: /assets/img/susan-clouds-1.jpg
 body:
   -
     type: text
