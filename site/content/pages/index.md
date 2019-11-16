@@ -12,7 +12,7 @@ promo_5: /assets/img/promo-grid-5.jpg
 quote: |
   <p>“As a world traveller, It's been my dream to create<span class="normaltextrun"> a sanctuary from the chaos of delayed flights, and an escape from the stress of</span><span class="apple-converted-space"> </span><span class="normaltextrun">over-crowed</span><span class="apple-converted-space"> </span><span class="normaltextrun">airports</span>."
   </p>
-quote_attribution: 'SUE CRAWFORD - NAPPING BUNNY FOUNDER'
+quote_attribution: 'SUSAN CRAWFORD - NAPPING BUNNY FOUNDER'
 featured_news: 230c6cc0-b9e6-49d9-bb57-8c1bc3f2c465
 video_id: 'https://player.vimeo.com/external/258698796.hd.mp4?s=735ae3bf353e747288660c1ff3cdb062cdfc8b72&profile_id=174'
 title: Home
