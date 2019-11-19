@@ -27,7 +27,7 @@ body:
     proportion: fifty
   -
     type: image
-    inline_image: /assets/img/denver_international_airport.jpg
+    inline_image: /assets/img/denver-2.jpg
     alignment: right
     proportion: fifty
   -

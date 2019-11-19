@@ -1,6 +1,6 @@
 title: 'Denver International Airport - Jeppesen Terminal'
 thumb_image: /assets/img/airport-denver-2.svg
-main_image: /assets/img/denver_international_airport.jpg
+main_image: /assets/img/denver-2.jpg
 alternate_views:
   - /assets/img/den-alt-img-1.jpg
   - /assets/img/desert.jpg

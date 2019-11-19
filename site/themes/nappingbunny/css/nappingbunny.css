@@ -639,6 +639,10 @@ a.button .radius, button.radius {
 	text-transform: lowercase;
 	font-family: 'Nunito', sans-serif;
 	font-weight: 600;
+	border: none;
+}
+a:hover.button {
+	color: #eee;
 }
 .button.hollow.basket {
 	border: 1px solid white;
