@@ -37,12 +37,21 @@
 			
 			<div class="text-center" style="display: inline-flex;">
 				<ul class="menu align-center">
-					{{ nav from="/" scope="tag" exclude="whats-a-pod|locations|make-a-reservation|Meet-napping-bunny|news|my-account|guest-support|meet-napping-bunny|thank-you" }}
-						<li{{ if is_current or is_parent }} class="active"{{ /if }}>
-							<a href="{{ url }}" class="menu-item-{{ increment }}" style="border:  none;">{{ tag:nav_title or title }}</a>
-						</li>
-					{{ /nav }}
-					<li class="copyright">&copy; {{ now|format:Y }} {{ site_name }}</li>
+					{{ if open_for_business }}
+						{{ nav from="/" scope="tag" exclude="whats-a-pod|locations|make-a-reservation|Meet-napping-bunny|news|my-account|guest-support|meet-napping-bunny|thank-you" }}
+							<li{{ if is_current or is_parent }} class="active"{{ /if }}>
+								<a href="{{ url }}" class="menu-item-{{ increment }}" style="border:  none;">{{ tag:nav_title or title }}</a>
+							</li>
+						{{ /nav }}
+						<li class="copyright">&copy; {{ now|format:Y }} {{ site_name }}</li>
+					{{ else }}
+						{{ nav from="/" scope="tag" exclude="whats-a-pod|locations|make-a-reservation|Meet-napping-bunny|news|my-account|guest-support|meet-napping-bunny|thank-you|corporate-accounts|careers" }}
+							<li{{ if is_current or is_parent }} class="active"{{ /if }}>
+								<a href="{{ url }}" class="menu-item-{{ increment }}" style="border:  none;">{{ tag:nav_title or title }}</a>
+							</li>
+						{{ /nav }}
+						<li class="copyright">&copy; {{ now|format:Y }} {{ site_name }}</li>
+					{{ endif }}
 				</ul>
 			</div>
 			

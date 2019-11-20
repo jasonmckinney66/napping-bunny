@@ -27,7 +27,7 @@ body:
     proportion: fifty
   -
     type: image
-    inline_image: /assets/img/denver-2.jpg
+    inline_image: /assets/img/meet-napping-bunny-inline-3.jpg
     alignment: right
     proportion: fifty
   -

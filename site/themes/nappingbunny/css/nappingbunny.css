@@ -56,6 +56,10 @@ h3 {
   color: #4c8f08;
 }
 
+.container img {
+	border-radius: 1em;
+}
+
 p {
 	font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 	font-weight: normal;
@@ -139,7 +143,7 @@ section {
 }
 
 .secondary-nav {
-	background: #53495a url('/site/themes/nappingbunny/img/secondary-nav-2.png') no-repeat left top;
+	background: #53495a url('/site/themes/nappingbunny/img/secondary-nav-3.png') no-repeat left top;
 	padding: 50px 20px 20px 20px;
 	min-height: 320px;
 	background-size:  contain;

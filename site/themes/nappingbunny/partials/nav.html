@@ -13,13 +13,13 @@
       
       	<ul id="main-nav" class="vertical menu">
 	  		{{ if open_for_business }}
-      			{{ nav from="/" scope="tag" exclude="whats-a-pod|corporate-accounts|privacy-policy|terms-of-use|careers" }}
+      			{{ nav from="/" scope="tag" exclude="whats-a-pod|corporate-accounts|privacy-policy|terms-of-use|careers|thank-you" }}
 	  			<li{{ if is_current or is_parent }} class="active"{{ /if }}>
 	  				<a href="{{ url }}" class="menu-item-{{ increment }}">{{ tag:nav_title or title }}</a>
 	  			</li>
 	  			{{ /nav }}
 	  		{{ else }}
-	  			{{ nav from="/" scope="tag" exclude="whats-a-pod|corporate-accounts|privacy-policy|terms-of-use|careers|locations|my-account|make-a-reservation|guest-support" }}
+	  			{{ nav from="/" scope="tag" exclude="whats-a-pod|corporate-accounts|privacy-policy|terms-of-use|careers|locations|my-account|make-a-reservation|guest-support|thank-you" }}
 	  			<li{{ if is_current or is_parent }} class="active"{{ /if }}>
 	  				<a href="{{ url }}" class="menu-item-{{ increment }}">{{ tag:nav_title or title }}</a>
 	  			</li>
