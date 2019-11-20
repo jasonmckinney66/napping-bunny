@@ -72,6 +72,10 @@ a:hover {
     color: #fff;
 }
 
+.sweetness {
+	display: none;
+}
+
 ul.check li {
     padding-left: 30px;
     list-style-type: none;
@@ -533,6 +537,13 @@ footer span.date {
 	background-color: #7fbb42;
 	padding: .4em 0;
 }
+
+footer input[type=text] {
+	width: 80%;
+	float: left;
+	background-color: #7c6e87;
+	border: none;
+}
 .social {
 	padding-left: 1em;
 	text-align: right;
@@ -562,6 +573,16 @@ footer span.date {
 
 #thumbs img {
    cursor: pointer;
+}
+
+@media screen and (max-width: 39.9375em) {
+	footer input[type=text] {
+		width: 100%;
+		float: none;
+	}
+	footer .button {
+		width: 100%;
+	}
 }
 
 /* Content */

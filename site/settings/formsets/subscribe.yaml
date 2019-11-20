@@ -1,0 +1,16 @@
+title: Subscribe
+honeypot: sweetness
+fields:
+  email:
+    display: 'Email Address'
+    validate: required|email
+columns:
+  - email
+metrics:
+  -
+    type: total
+    label: Submissions
+email:
+  -
+    to: crawfordsusan@mac.com
+    subject: 'Someone subscribed to Napping Bunny!'

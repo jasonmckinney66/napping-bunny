@@ -7,21 +7,44 @@
 <footer>
 
 	<div class="row">
-		<div class="small-12 columns text-center">
-			
+		<div class="small-12 medium-3 columns text-center">
 			<a href="/" style="border: none;"><img src="{{ theme:img src="logo-footer.svg" }}" alt="logo" width="150"></a>
+		</div>
+		<div class="small-12 medium-9 columns text-center">
+			<div class="row">
+				
+			    <div class="small-12 medium-3 columns">
+					<p class="text-right">sign up for napping bunny updates!</p>
+				</div>
+				
+				<div class="small-12 medium-9 columns">
+
+					{{ form:create in="subscribe" redirect="/thank-you" }}
+						<input type="text" name="email" placeholder="your email" value="{{ old:email }}" />
+						<input type="text" name="sweetness" class="sweetness" />
+						<button class="button">Subscribe</button>
+					{{ /form:create }}
+
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="small-12 columns text-center">
 			
 			<div class="text-center" style="display: inline-flex;">
 				<ul class="menu align-center">
-					{{ nav from="/" scope="tag" exclude="whats-a-pod|locations|make-a-reservation|Meet-napping-bunny|news|my-account|guest-support|meet-napping-bunny" }}
+					{{ nav from="/" scope="tag" exclude="whats-a-pod|locations|make-a-reservation|Meet-napping-bunny|news|my-account|guest-support|meet-napping-bunny|thank-you" }}
 						<li{{ if is_current or is_parent }} class="active"{{ /if }}>
 							<a href="{{ url }}" class="menu-item-{{ increment }}" style="border:  none;">{{ tag:nav_title or title }}</a>
 						</li>
 					{{ /nav }}
+					<li class="copyright">&copy; {{ now|format:Y }} {{ site_name }}</li>
 				</ul>
 			</div>
-			
-			<p class="copyright">&copy; {{ now|format:Y }} {{ site_name }}</p>
 			
     	</div>
 	</div>
