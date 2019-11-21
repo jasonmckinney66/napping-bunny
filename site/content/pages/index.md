@@ -1,6 +1,6 @@
 ---
 video_link: /site/themes/nappingbunny/img/hero-6.mp4
-hero_static: /assets/img/hero-video-placeholder-3.jpg
+hero_static: /assets/img/movie-still.jpg
 main_headline: 'relax. refresh. recharge.'
 featured_location: 0f46a159-0e5d-4507-b25f-476964e61bbf
 promo_1: /assets/img/promo-grid-1.jpg

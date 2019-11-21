@@ -542,8 +542,12 @@ footer span.date {
 	padding: .4em 0;
 }
 
+.social-icons a {
+	width: 20px;
+}
+
 footer input[type=text] {
-	width: 80%;
+	width: 70%;
 	float: left;
 	background-color: #7c6e87;
 	border: none;
