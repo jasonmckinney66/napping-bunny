@@ -4,7 +4,8 @@ body:
     type: text
     content: |
       <h2>about us</h2>
-      <h4>We accommodate travelers, providing a sanctuary from the chaos of delayed flights, and an escape from the stress of over-crowed airports. We give our customers a cozy and comfortable personal environment that promotes well-being and relaxation.</h4>
+      <h4><strong><br></strong><strong>Imagine if every concourse in every major airport could provide you with a personal sanctuary?  Wouldn’t you just love to have that option?  Our goal is to see this convenience actuated, thereby making travel simpler and more relaxing with a comfortable pod just steps away from your next flight.</strong></h4>
+      <h4><strong>As an early stage start-up, our primary goal is to accommodate travelers, providing a sanctuary from the chaos of delayed flights, and an escape from the stress of over-crowed airports. Once established, we'll provide our customers a cozy and comfortable personal environment that promotes well-being and relaxation.</strong></h4>
     columns: full
     proportion: na
   -
