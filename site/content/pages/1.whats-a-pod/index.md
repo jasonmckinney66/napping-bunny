@@ -59,7 +59,7 @@ body:
     proportion: fifty
   -
     type: image
-    inline_image: /assets/img/features.jpg
+    inline_image: /assets/img/features-2.jpg
     alignment: right
     proportion: fifty
   -

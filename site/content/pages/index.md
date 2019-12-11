@@ -3,12 +3,12 @@ video_link: /site/themes/nappingbunny/img/hero-6.mp4
 hero_static: /assets/img/movie-still.jpg
 main_headline: 'relax. refresh. recharge.'
 featured_location: 0f46a159-0e5d-4507-b25f-476964e61bbf
-promo_1: /assets/img/promo-grid-1.jpg
-promo_2: /assets/img/promo-grid-2.jpg
+promo_1: /assets/img/relaxation-2.jpg
+promo_2: /assets/img/privacy-2.png
 promo_3: /assets/img/see-more-3.png
 promo_3_link: /whats-a-pod/
 promo_4: /assets/img/promo-grid-4.png
-promo_5: /assets/img/promo-grid-5.jpg
+promo_5: /assets/img/comfort-2.jpg
 quote: |
   <p>“As a world traveller, It's been my dream to create<span class="normaltextrun"> a sanctuary from the chaos of delayed flights, and an escape from the stress of</span><span class="apple-converted-space"> </span><span class="normaltextrun">over-crowed</span><span class="apple-converted-space"> </span><span class="normaltextrun">airports</span>."
   </p>
